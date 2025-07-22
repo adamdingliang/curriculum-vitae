@@ -23,13 +23,79 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=red]{hyperref}
 
-\name{Liang Ding} % Your name
-\address{168 South Sierra Madre Boulevard Unit 113, Pasadena, CA 91101} % Your address
+\name{Liang (Adam) Ding} % Your name
+\address{511 Live Oak Ave Unit 4, Arcadia, CA 91006} % Your address
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
 \address{(956)~$\cdot$~802~$\cdot$~8972 \\ adamdingliang@gmail.com} % Your phone number and email
 
 \begin{document}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+\begin{rSubsection}{Spatial Genomics, Inc.}{March 2024 - Present}
+{Senior Bioinformatics Scientist}{Pasadena, CA}
+\item Collaborated with assay development scientists to leverage spatial information to improve cell type identification for human solid tumors and mouse liver MASH. Identified disease-associated spatial niches and cell-cell communications between immune cell subpopulations and tumor cells in the tumor microenvironment.
+
+\item Led the development of a novel algorithm to optimize barcode gene selection and distribution using reference scRNA-seq data to avoid optical crowding issue in decoding the barcode genes from raw images. Provided detailed steps and guidance for software engineers to implement the algorithm.
+
+\item Led the development of \href{https://tutorials.spatialgenomics.com/intro.html}{Spatial Genomics tutorials} for clustering, annotation, integration, and imputation of GenePS data from customers.
+
+\item Created business brochures and posters to showcase the applications of GenePS platform.
+\end{rSubsection}
+
+\begin{rSubsection}{Spatial Genomics, Inc.}{September 2022 - February 2024}
+{Bioinformatics Scientist}{Pasadena, CA}
+\item Spatial data analysis and visualization, such as the \href{http://kidneyviewer.spatialgenomics.com/}{mouse kidney Minerva story}, serve as a showcase for the launch of the GenePS platform. 
+
+\item Designed a novel deep degenerative algorithm for spatial niche alignment across ROIs by integrating spatial, image, and expression information from cells' spatial neighborhoods. Developed tools for mis-assigned transcript correction due to imperfect cell or nuclei segmentation.
+
+\item Standard and customized gene panel designs, as well as probe designs for both internal and external use.
+
+\item Comparative analysis of data from commercial in-situ platforms to guide the assay and 2nd generation instrument developments.
+\end{rSubsection}
+
+
+\begin{rSubsection}{St. Jude Children's Research Hospital}{December 2018 - September 2022}
+{Bioinformatics Research Scientist}{Memphis, TN}
+\item Oversaw and led the development of systems biology algorithms and software for scRNA-seq analysis, spatial and single-cell transcriptomics integration, and gene network reconstruction.
+
+Systems biology tools and algorithms:\\
+\href{https://www.nature.com/articles/s41467-025-59620-6}{scMINER} is a python/R package designed for preprocessing, QC, clustering, network inference, hidden driver analysis, visualization of scRNA-seq analysis.\\
+\href{https://www.nature.com/articles/s41467-023-38335-6}{NetBID2} is an R package for data-driven network-based Bayesian inference of drivers.\\
+\href{https://github.com/jyyulab/SJARACNe}{SJARACNe} is a scalable software tool for reverse engineering gene networks.
+
+Applied systems biology approaches to identify biomarkers and therapeutic targets for cancer treatment.
+
+Manuscript writing and assisting grant proposal drafting.
+\end{rSubsection}
+
+
+\begin{rSubsection}{St. Jude Children's Research Hospital}{July 2016 - December 2018}
+{Senior Software Engineer}{Memphis, TN}
+\item Development of bioinformatics workflow infrastructure for both research and clinical applications.
+
+\item Analyzed genomics sequencing data from the clinical labs and ultimately provided feedback to impact patient care.
+
+\item Collaborated with scientists to develop algorithms and softwares for analyzing multi-omics data.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{University of Georgia, Athens, Georgia}{September 2011 - June 2016}
+{Graduate Instructor}{Athens, Georgia}
+\item Lectured, oversaw in-class activities, and created all tests, quizzes, labs, projects for a fast-paced system programming course which held approximately 30 students.
+
+\textit{Lab Instructor and Teaching Assistant}
+\item Taught Java programming and Eclipse.
+\item Designed and graded lab assignments and projects.
+\item Explained complex concepts in small groups and held office hours for individual student discussion.
+\end{rSubsection}
+
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -52,38 +118,6 @@ B.S., Applied Mathematics
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Experience}
-\begin{rSubsection}{St. Jude Children's Research Hospital}{December 2018 - Present}
-{Bioinformatics Research Scientist}{Memphis, TN}
-\item Develop novel algorithms and computational tools for analyzing single-cell RNA-seq and spatial transcriptomics data.
-\item Apply systems biology approaches to find hidden drivers and novel therapeutic targets for cancer treatment.
-\end{rSubsection}
-
-\begin{rSubsection}{St. Jude Children's Research Hospital}{July 2016 - December 2018}
-{Senior Software Engineer}{Memphis, TN}
-\item Develops and implements novel analysis algorithms, softwares and pipelines for analyzing NGS sequencing data.
-\item Contributes bioinformatics analysis, data management, infrastructure design and development, manuscript preparation.
-\item Performed administrative, troubleshooting and other support functions for NGS data processing pipelines running in two HPC clusters in research and clinical.
-\end{rSubsection}
-
-%------------------------------------------------
-
-\begin{rSubsection}{University of Georgia, Athens, Georgia}{September 2011 - June 2016}
-{Graduate Instructor}{Athens, Georgia}
-\item Lectured, oversaw in-class activities, and created all tests, quizzes, labs, projects for a fast-paced system programming course which held approximately 30 students.
-
-\textit{Lab Instructor and Teaching Assistant}
-\item Taught Java programming and eclipse.
-\item Designed and graded lab assignments, projects.
-\item Explained complex concepts in small group and held office hours for individual student discussion.
-\end{rSubsection}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
@@ -91,9 +125,11 @@ B.S., Applied Mathematics
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Operating Systems & Mac OS X, Linux, Windows \\
-Computer Languages & Python, C++/C, SQL, Bash, CWL, Latex, Javascript, Java, HTML, CSS \\
+Computer Languages & Python, Rust, R, C++/C, SQL, Bash, Latex, Javascript \\
 Databases & PostgreSQL, MySQL, SQLite \\
-Tools & Git, SVN, Vim, Docker, Conda, Django, Travis CI
+Tools & Nvidia RAPIDS, PyTorch, Nextflow, Snakemake, Git, Docker \\
+Single-cell/Spatial analysis & Scanpy, Seurat, scvi-tools, Squidpy, SpatialData, Minerva\\
+Image analysis & ImageJ/Fiji, OpenCV, Baysor, Cellpose\\
 \end{tabular}
 
 \end{rSection}
@@ -103,62 +139,73 @@ Tools & Git, SVN, Vim, Docker, Conda, Django, Travis CI
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Publications}
+* First authors contributed equally  $^{\#}$ Corresponding authors
+
 \textbf{Peer Reviewed Journals}
 \begin{enumerate}
-\item Shi H., Yan K.K., \textbf{Ding L.}, Qian C., Chi H., Yu J. Network Approaches for Dissecting the Immune System. iScience 23 (8).
+\item Pan Q.*, \textbf{Ding L.}*, Hladyshau S., Yao X., et al., Chi H., Yu J.$^{\#}$ \href{https://github.com/jyyulab/scMINER}{scMINER}: a mutual information-based framework for clustering and hidden driver inference from single-cell transcriptomics data. Nature Communications 16, 4305, 2025.
 
-\item Silveira A.B., Kasper L.H., Fan Y., Jin H., Wu G., Shaw T.I., Zhu X., Larson J.D., Easton J., Shao Y., Yergeau D.A., Rosencrance C., Boggs K., Rusch M.C., \textbf{Ding L.}, Zhang J., Finkelstein D., Noyes R.M., Russell B.L., Xu B., Broniscer A., Wetmore C., Pounds S.B., Ellison D.W., Zhang J., Baker S.J. H3.3 K27M depletion increases differentiation and extends latency of diffuse intrinsic pontine glioma growth in vivo. Acta Neuropathol. 2019 Apr;137(4):637-655. doi: 10.1007/s00401-019-01975-4.
+\item McCastlain K.*, Welsh C.*, Ni Y.*, \textbf{Ding L.}*, et al., Yu J., Pounds S., Kundu M.$^{\#}$ Somatic mitochondrial DNA mutations are a source of heterogeneity among primary leukemic cells. Science Advanced, 2025.
 
-\item Kohei K., \textbf{Ding L.}, Michael N.E., Stephen V.R., Scott N., John E., Juncheng D., Soheil M., Rhonda E.R., Michael R., Jinghui Z. RNAIndel: discovering somatic coding indels from tumor RNA-Seq data. Bioinformatics, btz753, https://doi.org/10.1093/bioinformatics/btz753.
+\item Huang X.*, Li Y.*, Zhang J.*, Yan L., Zhao H., \textbf{Ding L.}, et al., Yu J.$^{\#}$, Yang J.$^{\#}$ Single-cell systems pharmacology identifies development-driven drug response and combination therapy in B cell acute lymphoblastic leukemia. Cancer cell, 42(4), 2024.
 
-\item Silveira A.B., Kasper L.H., Fan Y., Jin H., Wu G., Shaw T., Zhu X., Larson J.D., Easton J., Shao Y., Yergeau D.A., Rosencrance C., Boggs K., Rusch M.C., \textbf{Ding L.}, Zhang J., Finkelstein D., Noyes R.M., Russell B.L., Xu B., Broniscer A., Wetmore C., Pounds S.B., Ellison D.W., Zhang J., Baker S.J.. (2019) H3.3 K27M depletion increases differentiation and extends latency of diffuse intrinsic pontine glioma growth in vivo. Acta Neuropathologica. 137(4):637-655. doi: 10.1007/s00401-019-01975-4.
+\item Yan K.*, Condori J., Ma Z., \textbf{Ding L.}, Dhungana Y., et al., Gottschalk S.$^{\#}$, Yu J.$^{\#}$ Integrome signatures of lentiviral gene therapy for SCID-X1 patients. 9(40), 2023.
 
-\item Hagiwara K., \textbf{Ding L.}, Edmonson, M.N., Rice, S.V., Newman, S., Meshinchi, S., Ries, R.E., Rusch, M., Zhang, J. (2019) RNAIndel: a machine-learning framework for discovery of somatic coding indels using tumor RNA-Seq data. bioRxiv 512749; doi: https://doi.org/10.1101/512749.
+\item Zhang Y.*, Pool A.H., Wang T., Liu L., Kang E., Zhang B., \textbf{Ding L.}, Frieda K., Palmiter R., Oka Y.$^{\#}$ Parallel neural pathways control sodium consumption and taste valence. Cell, 186(26), 2023.
 
-\item Xu K., \textbf{Ding L.}, Chang T.C., Shao Y., Chiang J., Mulder H., Wang S., Shaw T.I., Wen J., Hover L., McLeod C., Wang Y.D., Easton J., Rusch M., Dalton J., Downing J.R., Ellison D.W., Zhang J., Baker S.J., Wu G.. (2018) Structure and evolution of double minutes in diagnosis and relapse brain tumors. Acta Neuropathologica. 137(1):123-137. doi: 10.1007/s00401-018-1912-1.
+\item Dong X.*, \textbf{Ding L.}, et al., Chi H., Zhang J., Yu J.$^{\#}$ \href{https://github.com/jyyulab/NetBID}{NetBID2} provides comprehensive hidden driver analysis. Cell, 14(1), 2023.
 
-\item Alexander T.B., Gu Z., Iacobucci I., Dickerson K., Choi J.K., Xu B., Payne-Turner D., Yoshihara H., Loh M.L., Horan J., Buldini B., Basso G., Elitzur S., de Haas V., Zwaan C.M., Yeoh A., Reinhardt D., Tomizawa D., Kiyokawa N., Lammens T., De Moerloose B., Catchpoole D., Hori H., Moorman A., Moore A.S., Hrusak O., Meshinchi S., Orgel E., Devidas M., Borowitz M., Wood B., Heerema N.A., Carrol A., Yang Y., Smith M.A., Davidsen T.M., Hermida L.C., Gesuwan P., Marra M.A., Ma Y., Mungall A.J., Moore R.A., Jones SJM., Valentine M., Janke L.J., Rubnitz J.E., Pui C., \textbf{Ding L}, Liu Y., Zhang J., Nichols K.E., Downing J.R., Cao X., Shi L., Pounds S., Newman S., Pei D., Guidry Auvil J.M., Gerhard D.S., Hunger S.P., Inaba H., Mullighan C.G.. The genetic basis and cell of origin of mixed phenotype acute leukaemia. (2018) Nature, 562(7727):373-379.
+\item Chang D.*, \textbf{Ding L.}*, Malmberg R., Robinson D, Wicker M., Yan H., Martinez A., Cai L.$^{\#}$ Optimal learning of Markov $k$-tree topology. Journal of Computational Mathematics and Data Science, 4(100046), 2022.
 
-\item Mohebbi, M, \textbf{Ding, L.}, Malmberg, R.L., Momany, C, Rasheed, K, Cai, L. (2018)
-Accurate prediction of human miRNA targets via graph modeling of miRNA-target duplex. Journal of Bioinformatics and Computational Biology, 7:1850013.
+\item Shi H.*, Yan K.*, \textbf{Ding L.}, Qian C., Chi H., Yu J.$^{\#}$ Network Approaches for Dissecting the Immune System. iScience 23(8), 2020.
 
-\item \textbf{Ding, L.}, Xue, X., LaMarca, S., Mohebbi, M., Samad, A., Malmberg, R.L., Cai, L. (2015) Accurate Prediction of RNA Nucleotide Interactions with Backbone k-Tree Model", Bioinformatics, 31(16): 2660-2667.
+\item Silveira A.B., Kasper L.H., Fan Y., et al., \textbf{Ding L.}, Zhang J., Finkelstein D., et al., Baker S.J.$^{\#}$ H3.3 K27M depletion increases differentiation and extends latency of diffuse intrinsic pontine glioma growth in vivo. Acta Neuropathol. 137(4): 637-655, 2019.
+
+\item Kohei K.*, \textbf{Ding L.}, Michael N.E., Stephen V.R., Scott N., John E., Juncheng D., Soheil M., Rhonda E.R., Michael R., Zhang, J.$^{\#}$ \href{https://github.com/stjude/RNAIndel}{RNAIndel}: discovering somatic coding indels from tumor RNA-Seq data. Bioinformatics, btz753, 2019.
+
+\item Silveira A.B.*, Kasper L.H., Fan Y., Jin H., Wu G., Shaw T., Zhu X., Larson J.D., Easton J., Shao Y., Yergeau D.A., Rosencrance C., Boggs K., Rusch M.C., \textbf{Ding L.}, Zhang J., et al., Zhang J., Baker S.J.$^{\#}$ H3.3 K27M depletion increases differentiation and extends latency of diffuse intrinsic pontine glioma growth in vivo. Acta Neuropathologica. 137(4):637-655, 2019.
+
+\item Xu K.*, \textbf{Ding L.}, Chang T.C., et al., Baker S.J., Wu G.$^{\#}$ Structure and evolution of double minutes in diagnosis and relapse brain tumors. Acta Neuropathologica. 137(1):123-137, 2019.
+
+\item Alexander T.B.*, Gu Z.*, Iacobucci I.*, Dickerson K., Choi J.K., Xu B., et al., \textbf{Ding L}, Liu Y., Zhang J., et al., Inaba H.$^{\#}$, Mullighan C.G.$^{\#}$ The genetic basis and cell of origin of mixed phenotype acute leukaemia. Nature, 562(7727):373-379, 2018.
+
+\item Mohebbi M.*, \textbf{Ding L.}, Malmberg R.L., Momany C., Rasheed K., Cai L.$^{\#}$ Accurate prediction of human miRNA targets via graph modeling of miRNA-target duplex. Journal of Bioinformatics and Computational Biology, 7:1850013, 2018.
+
+\item \textbf{Ding L.}*, Xue X., LaMarca S., Mohebbi M., Samad A., Malmberg R.L.$^{\#}$, Cai L.$^{\#}$ Accurate Prediction of RNA Nucleotide Interactions with Backbone k-Tree Model. Bioinformatics, 31(16): 2660-2667, 2015.
 \end{enumerate}
 
 
 \textbf{Conference Proceedings}
 \begin{enumerate}
-\item \textbf{Ding, L.}, Xue, X., LaMarca, S., Mohebbi M., Samad, A., Malmberg, R., and Cai, L. (2014) Abinitio prediction of RNA nucleotide interactions with backbone k-tree model", Proceedings of ECCB'14 Workshop on Computational Methods for Structural RNAs, Strasbourg France, 25-42.
+\item \textbf{Ding L.}*, Xue X., LaMarca S., Mohebbi M., Samad A., Malmberg R.$^{\#}$, and Cai L.$^{\#}$ (2014) Abinitio prediction of RNA nucleotide interactions with backbone k-tree model, Proceedings of ECCB'14 Workshop on Computational Methods for Structural RNAs, Strasbourg France, 25-42.
 
-\item \textbf{Ding, L.}, Samad, A., Xue, X., Huang, X., Malmberg, R., and Cai, L. (2014) Stochastic k-tree grammar and its application in bimolecular structure modeling", International Conference on Language and Automata Theory and Applications (LATA 2014) Vol 8370, 308-322.
+\item \textbf{Ding L.}*, Samad A., Xue X., Huang X., Malmberg R.$^{\#}$, and Cai L.$^{\#}$ (2014) Stochastic k-tree grammar and its application in bimolecular structure modeling, International Conference on Language and Automata Theory and Applications (LATA 2014) Vol 8370, 308-322.
 
-\item \textbf{Ding, L.}, Robertson, J., Malmberg, R., and Cai, L. (2013) Protein closed loop prediction from contact probabilities", International Symposium on Bioinformatics Research and Applications (ISBRA 2013), 199-210.
+\item \textbf{Ding L.}*, Robertson J., Malmberg R.$^{\#}$, and Cai L.$^{\#}$ (2013) Protein closed loop prediction from contact probabilities, International Symposium on Bioinformatics Research and Applications (ISBRA 2013), 199-210.
 
-\item \textbf{Ding, L.}, Fu, B., and Zhu, B. (2011) Minimum Interval Cover and Its Application to Genome Sequencing". International Conference on Combinatorial Optimization and Applications (COCOA 2011), 287- 298.
+\item \textbf{Ding L.}, Fu B., and Zhu B. (2011) Minimum Interval Cover and Its Application to Genome Sequencing. International Conference on Combinatorial Optimization and Applications (COCOA 2011), 287- 298.
 
-\item \textbf{Ding, L.}, Fu, B., and Fu, Y. (2010) Improved Sublinear Time Algorithm for Width- bounded Separators". International Workshop on Frontiers in Algorithmics, 101-112.
+\item \textbf{Ding L.}, Fu B., and Fu Y. (2010) Improved Sublinear Time Algorithm for Width- bounded Separators. International Workshop on Frontiers in Algorithmics, 101-112.
 
-\item \textbf{Ding, L.}, Fu, B., Fu, Y., Lu, Z., and Zhao, Z. (2010) $O((log n)^2)$ Time Online Approximation Schemes for Bin Packing and Subset Sum Problem". International Workshop on Frontiers in Algorithmics, 250-261.
+\item \textbf{Ding L.}, Fu B., Fu Y., Lu Z., and Zhao Z. (2010) $O((log n)^2)$ Time Online Approximation Schemes for Bin Packing and Subset Sum Problem. International Workshop on Frontiers in Algorithmics, 250-261.
 \end{enumerate}
 
 
 \textbf{Book Chapters}
 \begin{enumerate}
-\item Cai, L., \textbf{Ding, L.}, Huang, X., Malmberg, RL, and Xue, X. (2014) Stochastic grammar systems for biomolecular structure modeling, Integrative Bioinformatics for Biomedical Research: A No Boundary Thinking Approach", Huang and Moore ed. Cambridge Press, to appear.
+\item Cai L., \textbf{Ding L.}, Huang X., Malmberg R.L., and Xue X. (2014) Stochastic grammar systems for biomolecular structure modeling, Integrative Bioinformatics for Biomedical Research: A No Boundary Thinking Approach, Huang and Moore ed. Cambridge Press, to appear.
 
-\item \textbf{Ding, L.}, Fu, B. (2013) Algebrization and Randomization Methods". Handbook of Combinatorial Optimization, Springer, pp 171-220.
+\item \textbf{Ding L.}, Fu B. (2013) Algebrization and Randomization Methods. Handbook of Combinatorial Optimization, Springer, pp 171-220.
 
-\item \textbf{Ding, L.}, Fu, B., Fu, Y., Wan, Y. (2012) Application of Width-Bounded Separators to Protein Side-Chain Packing Problem", Sequence and Genome Analysis: Methods and Applications, iConcep Press.
+\item \textbf{Ding L.}, Fu B., Fu Y., Wan Y. (2012) Application of Width-Bounded Separators to Protein Side-Chain Packing Problem, Sequence and Genome Analysis: Methods and Applications, iConcep Press.
 \end{enumerate}
 
 
 \textbf{Preprints}
 \begin{enumerate}
-\item Michael R., \textbf{Liang D.}, Sasi A., Andrew T., Hongjian J., Michael M., Lawryn K., Andre S., Michael A.D., Suzanne J.B., Jinghui Z. XenoCP: Cloud-based BAM cleansing tool for RNA and DNA from Xenograft. bioRxiv 843250; doi: https://doi.org/10.1101/843250.
+\item Michael R., \textbf{Ding L.}, Sasi A., Andrew T., Hongjian J., Michael M., Lawryn K., Andre S., Michael A.D., Suzanne J.B., Zhang J.. XenoCP: Cloud-based BAM cleansing tool for RNA and DNA from Xenograft. bioRxiv 843250.
 
-\item \textbf{Ding, L.}, Chang, Di,, Malmberg, R., Martinez, A., Robinson, D., Wicker, M., Yan, H., Cai, L. (2018) Efficient Learning of Optimal Markov Network Topology with k-Tree Modeling. arXiv preprint arXiv:1801.06900.
-
-\item \textbf{Ding. L.}, Samad, A., Xue, X., Huang, X., Cai, L. (2013) Polynomial kernels collapse the W-hierarchy. arXiv preprint arXiv:1308.3613.
+\item \textbf{Ding L.}, Samad, A., Xue, X., Huang, X., Cai, L. (2013) Polynomial kernels collapse the W-hierarchy. arXiv preprint arXiv:1308.3613.
 \end{enumerate}
 \end{rSection}
 
