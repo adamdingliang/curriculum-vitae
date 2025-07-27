@@ -38,61 +38,54 @@
 \begin{rSection}{Experience}
 \begin{rSubsection}{Spatial Genomics, Inc.}{March 2024 - Present}
 {Senior Bioinformatics Scientist}{Pasadena, CA}
-\item Collaborated with assay development scientists to leverage spatial information to improve cell type identification for human solid tumors and mouse liver MASH. Identified disease-associated spatial niches and cell-cell communications between immune cell subpopulations and tumor cells in the tumor microenvironment.
+\item Spearheaded collaboration with assay scientists to leverage spatial transcriptomics for improving cell-type identification accuracy in human solid tumors and mouse MASH liver, identifying disease-associated spatial niches and immune-tumor cell communications.
 
-\item Led the development of a novel algorithm to optimize barcode gene selection and distribution using reference bulk and/or scRNA-seq data to avoid the optical crowding issue in decoding the barcode genes from raw images. Provided detailed steps and guidance for software engineers to implement the algorithm.
+\item Led development of a novel barcode optimization algorithm using bulk and/or scRNA-seq references to resolve optical crowding in raw image decoding; documented implementation protocols for software engineers, enhancing decoding efficiency.
 
-\item Led the development of \href{https://tutorials.spatialgenomics.com/intro.html}{Spatial Genomics tutorials} for clustering, annotation, integration, and imputation of \href{https://spatialgenomics.com/product/}{GenePS} data from customers.
+\item Architected customer-facing \href{https://tutorials.spatialgenomics.com/intro.html}{tutorials} for \href{https://spatialgenomics.com/product/}{GenePS} data analysis (clustering, annotation, integration, imputation, etc.) to accelerate platform adoption.
 
-\item Created business brochures and posters to showcase the applications of GenePS data.
+\item Translated technical insights into business collateral (brochures, posters) showcasing GenePS applications for key stakeholders.
 \end{rSubsection}
 
 \begin{rSubsection}{Spatial Genomics, Inc.}{September 2022 - February 2024}
 {Bioinformatics Scientist}{Pasadena, CA}
-\item Spatial data analysis and visualization, such as the \href{http://kidneyviewer.spatialgenomics.com/}{mouse kidney Minerva story}, served as a showcase for the launch of the GenePS platform. 
+\item Pioneered a deep generative-based (autoencoders and Bayesian inference) spatial niche alignment algorithm integrating spatial, imaging, and expression data to correct misassigned transcripts from imperfect segmentation.
 
-\item Designed a novel deep degenerative algorithm for spatial niche alignment across ROIs by integrating spatial, image, and expression information from cells' spatial neighborhoods. Developed tools for mis-assigned transcript correction due to imperfect cell or nuclei segmentation.
+\item Developed spatial data showcases (e.g., \href{http://kidneyviewer.spatialgenomics.com/}{mouse kidney Minerva story}) to demonstrate GenePS capabilities at launch.
 
-\item Standard and customized gene panel designs, as well as probe designs for both internal and external use.
+\item Executed comparative analysis of commercial in-situ platforms to guide 2nd-generation instrument/assay R\&D.
 
-\item Comparative analysis of data from commercial in-situ platforms to guide the assay and 2nd generation instrument developments.
+\item Designed standardized/custom gene panels and probes for internal/external use.
 \end{rSubsection}
 
 
 \begin{rSubsection}{St. Jude Children's Research Hospital}{December 2018 - September 2022}
 {Bioinformatics Research Scientist}{Memphis, TN}
-\item Oversaw and led the development of systems biology algorithms and software for scRNA-seq analysis, spatial and single-cell transcriptomics integration, and gene network reconstruction.
+\item Directed development of systems biology tools for multiomics analysis (scRNA-seq, spatial transcriptomics, gene networks), including:\\
+\href{https://www.nature.com/articles/s41467-025-59620-6}{scMINER} (Python/R): Preprocessing, QC, clustering, gene network reconstruction, hidden driver inference, and visualization.\\
+\href{https://www.nature.com/articles/s41467-023-38335-6}{NetBID2} (R): Data-driven network-based Bayesian inference of drivers.\\
+\href{https://github.com/jyyulab/SJARACNe}{SJARACNe} (Python/C++): Scalable gene network reverse engineering.
 
-Systems biology tools and algorithms:\\
-\href{https://www.nature.com/articles/s41467-025-59620-6}{scMINER} is a python/R package designed for preprocessing, QC, clustering, network inference, hidden driver analysis, and visualization of scRNA-seq analysis.\\
-\href{https://www.nature.com/articles/s41467-023-38335-6}{NetBID2} is an R package for data-driven network-based Bayesian inference of drivers.\\
-\href{https://github.com/jyyulab/SJARACNe}{SJARACNe} is a scalable software tool for reverse engineering gene networks.
+\item Applied computational approaches to identify cancer biomarkers/therapeutic targets with direct clinical relevance.
 
-\item Applied systems biology approaches to identify biomarkers and therapeutic targets for cancer treatment.
-
-\item Manuscript writing and assisting with grant proposal drafting.
+\item Co-authored manuscripts and grant proposals to secure research funding.
 \end{rSubsection}
 
 
 \begin{rSubsection}{St. Jude Children's Research Hospital}{July 2016 - December 2018}
 {Senior Software Engineer}{Memphis, TN}
-\item Development of bioinformatics workflow infrastructure for both research and clinical applications.
+\item Engineered bioinformatics workflows for clinical/research genomics (WES, WGS), improving patient data analysis pipelines.
 
-\item Analyzed genomics sequencing data from the clinical labs and ultimately provided feedback to impact patient care.
+\item Analyzed clinical sequencing data to inform treatment decisions and enhance patient care.
 
-\item Collaborated with scientists to develop algorithms and software for analyzing multi-omics data.
+\item Collaborated with scientists to develop algorithms for multiomics data analysis (e.g., \href{https://github.com/stjude/RNAIndel}{RNAIndel}, \href{https://github.com/stjude/Episomizer}{Episomizer}).
 \end{rSubsection}
 
 %------------------------------------------------
 
 \begin{rSubsection}{University of Georgia, Athens, Georgia}{September 2011 - June 2016}
-{Graduate Instructor}{Athens, Georgia}
-\item Lectured, oversaw in-class activities, and created all tests, quizzes, labs, and projects for a fast-paced system programming course that held approximately 30 students.
-
-\textit{Lab Instructor and Teaching Assistant}
-\item Taught Java programming and Eclipse.
-\item Designed and graded lab assignments and projects.
-\item Explained complex concepts in small groups and held office hours for individual student discussion.
+{Graduate Instructor/Lab Instructor}{Athens, Georgia}
+\item Designed/lectured system programming courses (C, Java); developed labs, projects, and assessments for 30+ students.
 \end{rSubsection}
 
 \end{rSection}
@@ -124,7 +117,6 @@ B.S., Applied Mathematics
 \begin{rSection}{Technical Strengths}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Operating Systems & Mac OS X, Windows, Linux \\
 Computer Languages & Python, Rust, R, Bash, C++/C, SQL, Latex, Javascript \\
 Databases & PostgreSQL, SQLite \\
 Tools & PyTorch, Nvidia RAPIDS, Nextflow, Snakemake, Git, Docker \\
@@ -149,7 +141,7 @@ Image analysis & ImageJ/Fiji, OpenCV, Baysor, Cellpose\\
 
 \item Huang X.*, Li Y.*, Zhang J.*, Yan L., Zhao H., \textbf{Ding L.}, et al., Yu J.$^{\#}$, Yang J.$^{\#}$ Single-cell systems pharmacology identifies development-driven drug response and combination therapy in B cell acute lymphoblastic leukemia. Cancer cell, 42(4), 2024.
 
-\item Yan K.*, Condori J., Ma Z., \textbf{Ding L.}, Dhungana Y., et al., Gottschalk S.$^{\#}$, Yu J.$^{\#}$ Integrome signatures of lentiviral gene therapy for SCID-X1 patients. 9(40), 2023.
+\item Yan K.*, Condori J., Ma Z., \textbf{Ding L.}, Dhungana Y., et al., Gottschalk S.$^{\#}$, Yu J.$^{\#}$ Integrome signatures of lentiviral gene therapy for SCID-X1 patients. Science Advances, 9(40), 2023.
 
 \item Zhang Y.*, Pool A.H., Wang T., Liu L., Kang E., Zhang B., \textbf{Ding L.}, Frieda K., Palmiter R., Oka Y.$^{\#}$ Parallel neural pathways control sodium consumption and taste valence. Cell, 186(26), 2023.
 
@@ -216,7 +208,7 @@ Image analysis & ImageJ/Fiji, OpenCV, Baysor, Cellpose\\
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Honors and Awards}
 \begin{itemize}
-\item Ovation Silver Award, St. Jude Children’s Research Hospital, 2017
+\item Ovation Silver Award, St. Jude Children’s Research Hospital, 2018
 \item Dissertation Completion Award, Graduate School, University of Georgia, Athens, Georgia, 2015
 \item Outstanding Graduate Teaching Assistant Award,  Graduate School, University of Georgia, Athens, Georgia, 2015
 \item CUDA and GPU Programming Certificate CUDA, Department of Computer Science, University of Georgia, 2013
