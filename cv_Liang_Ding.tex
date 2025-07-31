@@ -62,11 +62,11 @@
 \begin{rSubsection}{St. Jude Children's Research Hospital}{December 2018 - September 2022}
 {Bioinformatics Research Scientist}{Memphis, TN}
 \item Directed development of systems biology tools for multiomics analysis (scRNA-seq, spatial transcriptomics, gene networks), including:\\
-\href{https://jyyulab.github.io/scMINER/}{scMINER} (Python/R): Preprocessing, QC, clustering, gene network reconstruction, hidden driver inference, and visualization.\\
-\href{https://jyyulab.github.io/NetBID/}{NetBID2} (R): Data-driven network-based Bayesian inference of drivers.\\
+\href{https://jyyulab.github.io/scMINER/}{scMINER} (Python/R): Preprocessing, QC, clustering, gene network reconstruction, hidden driver inference, and visualization [\ref{scminer}].\\
+\href{https://jyyulab.github.io/NetBID/}{NetBID2} (R): Data-driven network-based Bayesian inference of drivers [\ref{netbid2}].\\
 \href{https://github.com/jyyulab/SJARACNe}{SJARACNe} (Python/C++): Scalable gene network reverse engineering.
 
-\item Applied computational approaches to identify cancer biomarkers/therapeutic targets with direct clinical relevance.
+\item Applied computational approaches to identify biomarkers/therapeutic targets with clinical relevance in leukemia [\ref{mtDNA}, \ref{bcell}].
 
 \item Contributed to research funding through co-authorship of peer-reviewed publications and successful grant proposals, demonstrating translational impact.
 \end{rSubsection}
@@ -76,7 +76,7 @@
 {Senior Software Engineer}{Memphis, TN}
 \item Developed bioinformatics workflows for clinical/research genomics (WES, WGS), improving patient data analysis pipelines.
 
-\item Collaborated with scientists to develop algorithms for multiomics data analysis (e.g., \href{https://github.com/stjude/RNAIndel}{RNAIndel}, \href{https://github.com/stjude/Episomizer}{Episomizer}).
+\item Collaborated with scientists to develop algorithms for multiomics data analysis (e.g., \href{https://github.com/stjude/RNAIndel}{RNAIndel} [\ref{rnaindel}], \href{https://github.com/stjude/Episomizer}{Episomizer} [\ref{doubleMinutes}]).
 
 \item Analyzed clinical sequencing data to inform treatment decisions and enhance patient care.
 \end{rSubsection}
@@ -136,29 +136,27 @@ Cloud computing & AWS, Microsoft Azure
 
 \textbf{Peer Reviewed Journals}
 \begin{enumerate}
-\item Pan Q.*, \textbf{Ding L.}*, Hladyshau S., Yao X., et al., Chi H., Yu J.$^{\#}$ \href{https://www.nature.com/articles/s41467-025-59620-6}{scMINER}: a mutual information-based framework for clustering and hidden driver inference from single-cell transcriptomics data. Nature Communications 16, 4305, 2025.
+\item Pan Q.*, \textbf{Ding L.}*, Hladyshau S., Yao X., et al., Chi H., Yu J.$^{\#}$ \href{https://www.nature.com/articles/s41467-025-59620-6}{scMINER}: a mutual information-based framework for clustering and hidden driver inference from single-cell transcriptomics data. Nature Communications 16, 4305, 2025.\label{scminer}
 
-\item McCastlain K.*, Welsh C.*, Ni Y.*, \textbf{Ding L.}*, et al., Yu J., Pounds S., Kundu M.$^{\#}$ Somatic mitochondrial DNA mutations are a source of heterogeneity among primary leukemic cells. Science Advanced, 2025.
+\item McCastlain K.*, Welsh C.*, Ni Y.*, \textbf{Ding L.}*, et al., Yu J., Pounds S., Kundu M.$^{\#}$ Somatic mitochondrial DNA mutations are a source of heterogeneity among primary leukemic cells. Science Advanced, 2025.\label{mtDNA}
 
-\item Huang X.*, Li Y.*, Zhang J.*, Yan L., Zhao H., \textbf{Ding L.}, et al., Yu J.$^{\#}$, Yang J.$^{\#}$ Single-cell systems pharmacology identifies development-driven drug response and combination therapy in B cell acute lymphoblastic leukemia. Cancer cell, 42(4), 2024.
+\item Huang X.*, Li Y.*, Zhang J.*, Yan L., Zhao H., \textbf{Ding L.}, et al., Yu J.$^{\#}$, Yang J.$^{\#}$ Single-cell systems pharmacology identifies development-driven drug response and combination therapy in B cell acute lymphoblastic leukemia. Cancer cell, 42(4), 2024.\label{bcell}
 
-\item Yan K.*, Condori J., Ma Z., \textbf{Ding L.}, Dhungana Y., et al., Gottschalk S.$^{\#}$, Yu J.$^{\#}$ Integrome signatures of lentiviral gene therapy for SCID-X1 patients. Science Advances, 9(40), 2023.
+\item Yan K.*, Condori J., Ma Z., \textbf{Ding L.}, Dhungana Y., et al., Gottschalk S.$^{\#}$, Yu J.$^{\#}$ Integrome signatures of lentiviral gene therapy for SCID-X1 patients. Science Advances, 9(40), 2023.\label{lentiviral}
 
-\item Zhang Y.*, Pool A.H., Wang T., Liu L., Kang E., Zhang B., \textbf{Ding L.}, Frieda K., Palmiter R., Oka Y.$^{\#}$ Parallel neural pathways control sodium consumption and taste valence. Cell, 186(26), 2023.
+\item Zhang Y.*, Pool A.H., Wang T., Liu L., Kang E., Zhang B., \textbf{Ding L.}, Frieda K., Palmiter R., Oka Y.$^{\#}$ Parallel neural pathways control sodium consumption and taste valence. Cell, 186(26), 2023.\label{sodium}
 
-\item Dong X.*, \textbf{Ding L.}, et al., Chi H., Zhang J., Yu J.$^{\#}$ \href{https://www.nature.com/articles/s41467-023-38335-6}{NetBID2} provides comprehensive hidden driver analysis. Cell, 14(1), 2023.
+\item Dong X.*, \textbf{Ding L.}, et al., Chi H., Zhang J., Yu J.$^{\#}$ \href{https://www.nature.com/articles/s41467-023-38335-6}{NetBID2} provides comprehensive hidden driver analysis. Cell, 14(1), 2023.\label{netbid2}
 
-\item Chang D.*, \textbf{Ding L.}*, Malmberg R., Robinson D, Wicker M., Yan H., Martinez A., Cai L.$^{\#}$ \href{https://www.sciencedirect.com/science/article/pii/S277241582200013X}{Optimal learning of Markov $k$-tree topology}. Journal of Computational Mathematics and Data Science, 4(100046), 2022.
+\item Chang D.*, \textbf{Ding L.}*, Malmberg R., Robinson D, Wicker M., Yan H., Martinez A., Cai L.$^{\#}$ \href{https://www.sciencedirect.com/science/article/pii/S277241582200013X}{Optimal learning of Markov $k$-tree topology}. Journal of Computational Mathematics and Data Science, 4(100046), 2022.\label{optimalktree}
 
-\item Shi H.*, Yan K.*, \textbf{Ding L.}, Qian C., Chi H., Yu J.$^{\#}$ Network Approaches for Dissecting the Immune System. iScience 23(8), 2020.
+\item Shi H.*, Yan K.*, \textbf{Ding L.}, Qian C., Chi H., Yu J.$^{\#}$ Network Approaches for Dissecting the Immune System. iScience 23(8), 2020.\label{netReview}
 
-\item Silveira A.B., Kasper L.H., Fan Y., et al., \textbf{Ding L.}, Zhang J., Finkelstein D., et al., Baker S.J.$^{\#}$ H3.3 K27M depletion increases differentiation and extends latency of diffuse intrinsic pontine glioma growth in vivo. Acta Neuropathol. 137(4): 637-655, 2019.
+\item Silveira A.B., Kasper L.H., Fan Y., et al., \textbf{Ding L.}, Zhang J., Finkelstein D., et al., Baker S.J.$^{\#}$ H3.3 K27M depletion increases differentiation and extends latency of diffuse intrinsic pontine glioma growth in vivo. Acta Neuropathol. 137(4): 637-655, 2019.\label{h33}
 
-\item Kohei K.*, \textbf{Ding L.}, Michael N.E., Stephen V.R., Scott N., John E., Juncheng D., Soheil M., Rhonda E.R., Michael R., Zhang, J.$^{\#}$ \href{https://academic.oup.com/bioinformatics/article/36/5/1382/5583731}{RNAIndel}: discovering somatic coding indels from tumor RNA-Seq data. Bioinformatics, btz753, 2019.
+\item Kohei K.*, \textbf{Ding L.}, Michael N.E., Stephen V.R., Scott N., John E., Juncheng D., Soheil M., Rhonda E.R., Michael R., Zhang, J.$^{\#}$ \href{https://academic.oup.com/bioinformatics/article/36/5/1382/5583731}{RNAIndel}: discovering somatic coding indels from tumor RNA-Seq data. Bioinformatics, btz753, 2019.\label{rnaindel}
 
-\item Silveira A.B.*, Kasper L.H., Fan Y., Jin H., Wu G., Shaw T., Zhu X., Larson J.D., Easton J., Shao Y., Yergeau D.A., Rosencrance C., Boggs K., Rusch M.C., \textbf{Ding L.}, Zhang J., et al., Zhang J., Baker S.J.$^{\#}$ H3.3 K27M depletion increases differentiation and extends latency of diffuse intrinsic pontine glioma growth in vivo. Acta Neuropathologica. 137(4):637-655, 2019.
-
-\item Xu K.*, \textbf{Ding L.}, Chang T.C., et al., Baker S.J., Wu G.$^{\#}$ Structure and evolution of \href{https://link.springer.com/article/10.1007/s00401-018-1912-1}{double minutes} in diagnosis and relapse brain tumors. Acta Neuropathologica. 137(1):123-137, 2019.
+\item Xu K.*, \textbf{Ding L.}, Chang T.C., et al., Baker S.J., Wu G.$^{\#}$ Structure and evolution of \href{https://link.springer.com/article/10.1007/s00401-018-1912-1}{double minutes} in diagnosis and relapse brain tumors. Acta Neuropathologica. 137(1):123-137, 2019.\label{doubleMinutes}
 
 \item Alexander T.B.*, Gu Z.*, Iacobucci I.*, Dickerson K., Choi J.K., Xu B., et al., \textbf{Ding L}, Liu Y., Zhang J., et al., Inaba H.$^{\#}$, Mullighan C.G.$^{\#}$ The genetic basis and cell of origin of mixed phenotype acute leukaemia. Nature, 562(7727):373-379, 2018.
 
